@@ -1,5 +1,7 @@
 # DIY Raspberry Pi camera for DAM
 
+**English** · [한국어](README.ko.md)
+
 Build your own outdoor Raspberry Pi camera and connect it to
 **[DAM — days in a minute](https://chase-nova.com)**: the camera takes a
 photo every few seconds, and every day of photos becomes a one-minute
@@ -41,23 +43,43 @@ with your DAM account.
 
 ## 1. Get a DAM account
 
-To connect a camera you need a DAM account with the **post_staff** role.
-It lets you:
+You sign up yourself with an email address — no one needs to approve it.
 
-- create your own **Locations** (the places your cameras film),
-- **register** cameras and hold them (you are their *custodian*),
-- assign a camera to one of your Locations, start/stop it, and manage its
+1. Go to [chase-nova.com](https://chase-nova.com), choose **Sign in**,
+   then **No account yet? Sign up**.
+2. Enter your email address and click **Send code**. A 6-digit code
+   arrives from `no-reply@chase-nova.com` within a minute (look in spam,
+   too). The code is valid for 10 minutes; *Send a new code* gets a fresh
+   one.
+3. Enter the code, a display name and a password (at least 8
+   characters), tick the agreements — the
+   [Terms of Use](https://chase-nova.com/en/terms), the
+   [Privacy notice](https://chase-nova.com/en/privacy), and that you are
+   14 or older — then click **Create account**. You are signed in right
+   away.
+
+   In short, the Terms say: images your camera uploads may be used for
+   public-interest purposes (research, environmental records, education);
+   illegal, sexual or adult content and abuse of the service lead to a
+   permanent ban. A copy of the full text is in [TERMS.md](TERMS.md).
+
+Your new account can:
+
+- create **one Location** (the place your camera films),
+- **register one camera** and hold it (you are its *custodian*),
+- assign the camera to your Location, start/stop it, and manage its
   videos.
 
-Accounts are created by the DAM operator; each account has a limit on how
-many Locations and cameras it can hold.
+Your Location's coordinates stay private: only you and the DAM operators
+see them. If you want to run more cameras or Locations later, ask the DAM
+operator to raise your limits.
 
-> **TODO (operator):** how to request an account — contact address or
-> form. Until then: ask the person who runs your DAM instance.
+Forgot your password? On the sign-in page choose **Forgot your
+password?** — a code goes to your email, and you set a new password with
+it.
 
-When your account is ready, sign in at [chase-nova.com](https://chase-nova.com)
-and open **Manage**. If you see **Devices → Register device**, you are
-set.
+When you are signed in, open **Manage**. If you see **Devices → Register
+device**, you are set.
 
 ---
 
@@ -474,4 +496,6 @@ for DAM, chase-nova, CC BY 4.0"* with a link to this repository — and say
 if you changed it.
 
 The camera software itself, [rpi-camera-agent](https://github.com/chase-nova/rpi-camera-agent),
-is licensed separately under Apache-2.0.
+is licensed separately under Apache-2.0. The DAM service's Terms of Use
+and Privacy notice ([TERMS.md](TERMS.md), [TERMS.ko.md](TERMS.ko.md)) are
+the service's agreement with its users, not part of this CC BY 4.0 guide.
