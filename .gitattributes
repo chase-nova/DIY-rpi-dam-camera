@@ -1,0 +1,5 @@
+# text with LF everywhere; images as binary
+* text=auto eol=lf
+*.jpg binary
+*.jpeg binary
+*.png binary

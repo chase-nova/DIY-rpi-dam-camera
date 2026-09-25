@@ -1,0 +1,27 @@
+name: Docs problem
+description: A step is wrong, unclear, or didn't work for you
+labels: [docs]
+body:
+  - type: input
+    id: step
+    attributes:
+      label: Which step?
+      description: Section number or heading, e.g. "5.4 Only for the Arducam IMX462"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what you saw (paste error messages as text)
+    validations:
+      required: true
+  - type: input
+    id: hardware
+    attributes:
+      label: Your hardware
+      description: Pi model, camera, OS release — e.g. "Pi Zero 2 W, HQ Camera M12, Bookworm Lite 64-bit"
+  - type: markdown
+    attributes:
+      value: |
+        Please don't post personal details, your enrollment token, or the contents of `credential.json`.

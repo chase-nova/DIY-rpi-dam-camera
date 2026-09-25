@@ -1,0 +1,34 @@
+name: Hardware report
+description: Share a build — parts that worked (or didn't) and what you learned
+labels: [hardware-report]
+body:
+  - type: input
+    id: pi
+    attributes:
+      label: Raspberry Pi
+      placeholder: Pi Zero 2 W / Pi 3B / ...
+    validations:
+      required: true
+  - type: input
+    id: camera
+    attributes:
+      label: Camera module and lens
+      placeholder: HQ Camera M12 + 4 mm F1.5 / Arducam IMX462 / ...
+    validations:
+      required: true
+  - type: textarea
+    id: package
+    attributes:
+      label: Package and power
+      description: Box, window (dome/flat), sunshade, vents, power supply and cable length
+  - type: textarea
+    id: result
+    attributes:
+      label: How it went
+      description: Temperatures on sunny days, focus, night images, Wi-Fi, anything surprising
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        Photos are welcome — see CONTRIBUTING.md (no faces, house numbers or location data).
