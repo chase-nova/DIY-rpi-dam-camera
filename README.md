@@ -36,8 +36,9 @@ with your DAM account.
 7. [Register the camera with DAM](#7-register-the-camera-with-dam)
 8. [Focus, test and seal](#8-focus-test-and-seal)
 9. [Mount it outdoors](#9-mount-it-outdoors)
-10. [Troubleshooting](#10-troubleshooting)
-11. [Privacy, safety and license](#11-privacy-safety-and-license)
+10. [Day-to-day](#10-day-to-day)
+11. [Troubleshooting](#11-troubleshooting)
+12. [Privacy, safety and license](#12-privacy-safety-and-license)
 
 ---
 
@@ -47,12 +48,16 @@ You sign up yourself with an email address — no one needs to approve it.
 
 1. Go to [chase-nova.com](https://chase-nova.com), choose **Sign in**,
    then **No account yet? Sign up**.
-2. Enter your email address and click **Send code**. A 6-digit code
+2. Enter your email address and click **Send code** (if the address
+   already has an account, the page says so — sign in, or reset the
+   password as described below). A 6-digit code
    arrives from `no-reply@chase-nova.com` within a minute (look in spam,
    too). The code is valid for 10 minutes; *Send a new code* gets a fresh
    one.
 3. Enter the code, a display name and a password (at least 8
-   characters), tick the agreements — the
+   characters; English letters, digits and symbols only — if you type
+   Korean or another language by accident, check the keyboard's input
+   mode, e.g. the 한/영 key), tick the agreements — the
    [Terms of Use](https://chase-nova.com/en/terms), the
    [Privacy notice](https://chase-nova.com/en/privacy), and that you are
    14 or older — then click **Create account**. You are signed in right
@@ -297,7 +302,7 @@ rpicam-hello --list-cameras
 ```
 
 You should see your camera (`imx477` for the HQ Camera). If the list is
-empty, switch off and re-seat the ribbon cable (§10).
+empty, switch off and re-seat the ribbon cable (§11).
 
 ### 5.4 Only for the Arducam IMX462
 
@@ -423,8 +428,16 @@ interval the **latest frame** appears on the device page.
 
 Optional, on the same page:
 
-- **Video window** — all day, fixed hours, or the presets *Daylight
-  video (dawn → dusk)* / *Night video (dusk → dawn)* (need coordinates).
+- **Daily video window** — which part of the day becomes the video.
+  Type times (`06:00 → 20:00`) or use the presets *Daylight video
+  (dawn → dusk)*, *Night video (dusk → dawn)* and *Full day from dawn
+  (dawn → dawn)*. `dawn` and `dusk` work like any time, recalculated
+  every day from your Location's coordinates (without coordinates they
+  count as 06:00 and 18:00). A start later than the end crosses
+  midnight. **The same time at both ends means 24 hours from that time
+  to the same time the next day**: `00:00 → 00:00` (the default) is
+  midnight to midnight, `dawn → dawn` gives a video from sunrise to
+  sunrise.
 - **Boosted dawn / Boosted dusk** — four times more photos around sunrise
   and sunset (the video gets a little longer).
 
@@ -466,7 +479,39 @@ Optional, on the same page:
 
 ---
 
-## 10. Troubleshooting
+## 10. Day-to-day
+
+Everything below is on the camera's page in **Manage → Devices**.
+
+- **Is it working?** The page shows the latest frame, when the camera
+  last reported, its temperature and power, and how many photos it has
+  uploaded. The Devices list shows each camera's health at a glance.
+- **Pause and resume**: *Stop* / *Start* — takes effect within one
+  capture interval. A stopped camera stays online, it just stops taking
+  photos.
+- **Change the Wi-Fi from afar**: in the **Wi-Fi** panel, *Scan
+  networks*, pick one, enter its password and *Apply & switch*. The
+  camera switches on its next contact; if it cannot connect, it falls
+  back to the previous network by itself.
+- **Move the camera**: pick another of your Locations and *Assign*. One
+  camera films one Location at a time.
+- **New SD card**: after reinstalling, use *New SD card token* on the
+  camera's page and give the new token to the camera as in §7.3. The
+  old key stops working.
+- **Lost or stolen camera**: *Disable (kill-switch)* under **Device
+  token** stops all its uploads at once. Only a DAM operator can enable
+  it again — write to contact@chase-nova.com.
+- **Your videos**: open your Location in **Manage → Locations**. Daily
+  videos are added there by DAM (for now in batches, so a new day can
+  take a day or two to appear). Each video starts **private**; click
+  its *private* / *public* badge to show it on the public site or hide
+  it again.
+- **More cameras or Locations**: a new account holds one Location and
+  one camera. Ask the DAM operator to raise the limits.
+
+---
+
+## 11. Troubleshooting
 
 | Symptom | Likely cause and fix |
 | --- | --- |
@@ -479,12 +524,16 @@ Optional, on the same page:
 | `not enrolled` in the log | no token set — §7.3 |
 | Uploads refused, device says **unassigned** | assign it to a Location — §7.4 |
 | Window fogs up | fresh silica gel, drain hole open, vents not blocked |
+| "Location name is already in use" | names are unique across DAM, ignoring upper/lower case — pick the suggested name or another one (§7.1) |
+| "Accept the current Terms of Use…" when creating a Location or registering a camera | the Terms changed or your account predates them — accept them in the banner at the top of **Manage** |
+| Password not accepted when signing up or resetting | use English letters, digits and symbols only; check the keyboard's input mode (한/영) |
+| **same hostname as …** on the Devices page | two of your Pis share a hostname — give each its own (`sudo hostnamectl set-hostname dam-kim-2`, then reboot) |
 
 More help: open an issue in this repository.
 
 ---
 
-## 11. Privacy, safety and license
+## 12. Privacy, safety and license
 
 - Point your camera at **landscapes, skylines and public scenery** — not
   into neighbours' windows, gardens or at people. Check the rules for
