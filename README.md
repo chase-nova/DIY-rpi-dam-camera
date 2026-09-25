@@ -18,6 +18,7 @@ with your DAM account.
 | **Skills** | basic computer use, copying commands into a terminal, a drill and a screwdriver |
 | **Result** | a camera that uploads to your own Location on DAM and a new video every day |
 | **Software** | [rpi-camera-agent](https://github.com/chase-nova/rpi-camera-agent) (open source, Apache-2.0) |
+| **License of this guide** | [CC BY 4.0](#license) — share and adapt with credit |
 
 ## Contents
 
@@ -441,5 +442,14 @@ More help: open an issue in this repository.
 - Mains power belongs to a proper outdoor-rated socket or an indoor
   outlet — not inside the camera box.
 
-> **TODO (operator):** choose the license for this guide (proposal:
-> CC BY 4.0 for text and photos).
+### License
+
+This guide — text and photos — is licensed under the
+**[Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)**
+(full text in [LICENSE](LICENSE)). You may share and adapt it, also
+commercially, as long as you give credit — e.g. *"DIY Raspberry Pi camera
+for DAM, chase-nova, CC BY 4.0"* with a link to this repository — and say
+if you changed it.
+
+The camera software itself, [rpi-camera-agent](https://github.com/chase-nova/rpi-camera-agent),
+is licensed separately under Apache-2.0.
