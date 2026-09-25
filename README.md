@@ -265,7 +265,12 @@ the camera works (§8).
    first-boot settings are ignored there, and the IMX462 steps below are
    tested on Bookworm.
 3. Open the **settings** (gear / "Edit settings") and set:
-   - a hostname, e.g. `dam-cam-1`,
+   - a **hostname** of your own, e.g. `dam-kim-1` — letters, digits and
+     `-`. If you build more than one camera, give each Pi a different
+     hostname: two Pis with the same name on your network make
+     `ssh <name>.local` reach either one (DAM's Devices page warns you).
+     The hostname is only for your network; DAM gives each camera its own
+     ID (`dam-…`) when you register it (§7.2),
    - a user name and password,
    - your **Wi-Fi** name, password and **country**,
    - **SSH enabled** — preferably with your public key,
@@ -280,7 +285,7 @@ Put the card in the Pi and power it on. After a minute or two, connect
 from your computer:
 
 ```bash
-ssh <user>@dam-cam-1.local        # or ssh <user>@<pi-ip>
+ssh <user>@dam-kim-1.local        # or ssh <user>@<pi-ip>
 sudo apt update && sudo apt full-upgrade -y
 sudo reboot
 ```
@@ -372,9 +377,11 @@ software repository explains each one.
 
 In **Manage → Locations → New location**:
 
-- **Name**: letters, digits, `-` or `_` (e.g. `River-View`). It becomes
-  part of the video file names and cannot be changed while a camera is
-  assigned.
+- **Name**: letters, digits, `-` or `_` (e.g. `River-View`). Names are
+  unique across DAM, ignoring upper/lower case — if yours is taken, the
+  form suggests a free one (e.g. `River-View-2`) you can pick with one
+  click. It becomes part of the video file names and cannot be changed
+  while a camera is assigned.
 - **Time zone**: the place's time zone.
 - **Coordinates** (optional but recommended): enables the dawn/dusk
   schedule. *Use my location* fills them in from your browser.
