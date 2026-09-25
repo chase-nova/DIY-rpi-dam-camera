@@ -10,7 +10,9 @@ step by step: choosing the hardware, choosing a lens, building a
 weatherproof package, installing the software, and registering the camera
 with your DAM account.
 
-*[Photo 00 — images/00-finished-camera.jpg: the finished, packaged camera mounted outdoors]*
+<img src="images/arducam-imx462-in-dome.jpg" alt="Finished camera: Arducam IMX462 behind an acrylic dome on a food-container lid" width="600">
+
+*A finished camera package: an Arducam IMX462 behind an acrylic dome glued onto a food-container lid.*
 
 | | |
 | --- | --- |
@@ -97,7 +99,9 @@ Buy the HQ Camera **M12** version (not the CS-mount version) if you want
 to use the M12 lenses in §2c. The camera comes with a 15-pin ribbon cable;
 for the Pi Zero 2 W you need the 22-pin to 15-pin cable instead.
 
-*[Photo 02 — images/02-cameras.jpg: HQ Camera M12 and Arducam IMX462]*
+<img src="images/hq-camera-m12.jpg" alt="Raspberry Pi HQ Camera, M12 mount, with its ribbon cable" width="600">
+
+*Raspberry Pi HQ Camera, M12 version, before the lens goes in. (The Arducam IMX462 is the camera in the photo at the top.)*
 
 ### 2c. Lens
 
@@ -123,7 +127,9 @@ Tips:
   it does not make it better behind the HQ Camera's IR filter.
 - M12 lenses screw into the holder; you focus by turning the lens (§8).
 
-*[Photo 03 — images/03-lenses.jpg: the four lens types]*
+<img src="images/m12-lenses.jpg" alt="Three M12 lenses side by side" width="600">
+
+*M12 lenses: an 8 mm, an "IR 1080p" wide lens and an unmarked wide lens. The focal length is usually printed on the barrel or the box.*
 
 ### 2d. Everything else
 
@@ -135,6 +141,7 @@ Tips:
 | Waterproof box | see §3 |
 | Acrylic dome or flat acrylic window | see §3 |
 | Cable gland (PG7/PG9) + outdoor silicone | seals the cable entry |
+| Hot-glue gun, zip ties | fixing the dome, the camera and the cable |
 | Heatsink for the Pi | stick-on |
 | Silica-gel pack | keeps the inside dry |
 | Standoffs/screws, mounting bracket | to fix the Pi and camera inside and the box outside |
@@ -185,7 +192,13 @@ protect itself.
 - Keep the USB cable short; if you need distance, move the power supply
   closer, not the cable longer.
 
-*[Photo 05 — images/05-box-prepared.jpg: box with window, gland, vents and drain hole]*
+<img src="images/dome-on-lid.jpg" alt="Acrylic dome placed over a hole cut in the container lid" width="600">
+
+*The window: cut a round hole in the lid a little smaller than the dome's rim, and centre the dome over it.*
+
+<img src="images/gluing-dome-to-lid.jpg" alt="Glue gun, container lid with the dome and the camera" width="600">
+
+*Glue the dome onto the lid all the way round with a hot-glue gun, then finish the seam with outdoor silicone.*
 *[Photo 06 — images/06-sunshade.jpg: the second roof with its air gap]*
 
 ---
@@ -204,11 +217,18 @@ the camera works (§8).
    focus; fine focus comes later.
 3. **Stick the heatsink** on the Pi's processor.
 4. **Fix the camera behind the window** so the lens nearly touches it
-   (reflections disappear) and nothing of the box edge is in view.
+   (reflections disappear) and nothing of the box edge is in view — zip
+   ties through small holes around the camera board work well.
 5. **Fix the Pi** on standoffs, upright if possible.
 
 *[Photo 07 — images/07-cable-connected.jpg: ribbon cable in the Pi and camera connectors]*
-*[Photo 08 — images/08-inside-wired.jpg: camera behind the window, Pi on standoffs]*
+<img src="images/camera-fixed-to-lid.jpg" alt="HQ camera with lens fixed to the lid with zip ties, ribbon cable passing the edge" width="600">
+
+*The camera fixed to the inside of the lid with zip ties, lens centred under the window; the ribbon cable runs along the lid to the box.*
+
+<img src="images/pi-zero-in-box.jpg" alt="Pi Zero with heatsink inside a metal box, camera lid next to it, USB cable glued through the wall" width="600">
+
+*Inside: a Pi Zero 2 W with a heatsink in the box, the ribbon cable to the camera in the lid, and the USB power cable entering through a hole sealed with glue.*
 
 ---
 
@@ -410,7 +430,9 @@ Optional, on the same page:
 - Check the Wi-Fi signal at the final spot before fixing everything.
 - Next day, watch your first video on your Location's page.
 
-*[Photo 14 — images/14-mounted.jpg: mounted camera with sunshade]*
+<img src="images/mounted-outdoors.jpg" alt="Two packaged cameras mounted on an outdoor railing, wrapped in clear plastic against rain" width="600">
+
+*Two packaged cameras mounted on a railing. Here a clear plastic cover keeps rain off the seams — a sunshade (§3) belongs over it on sunny spots.*
 *[Photo 15 — images/15-first-video.png: the first daily video]*
 
 ---
