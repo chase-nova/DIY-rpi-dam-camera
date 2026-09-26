@@ -106,7 +106,9 @@
 
 어느 보드든 프로세서에 작은 **방열판**을 붙이세요 (§3).
 
-*[사진 01 — images/01-pi-zero-and-pi3.jpg: 나란히 놓은 Pi Zero 2 W와 Pi 3]*
+<img src="images/01-pi-zero-and-pi3.jpg" alt="투명 케이스의 라즈베리 파이 3와 검은 방열 케이스의 Pi Zero 2 W, 각각 M12 카메라에 연결됨" width="600">
+
+*두 보드를 각각 카메라에 연결한 모습: 투명 케이스의 Pi 3(왼쪽 아래)는 흰색 표준 15핀 케이블로 8 mm 렌즈의 HQ 카메라에, 방열 케이스의 Pi Zero 2 W(오른쪽 아래)는 얇은 주황색 22핀 케이블로 돔 뒤의 카메라에 연결되어 있습니다.*
 
 ### 2b. 카메라 모듈
 
@@ -169,7 +171,9 @@ HQ 카메라 M12용입니다. **얼마나 넓게** 보고 싶은지(수평 화�
 | 스페이서/나사, 설치 브래킷 | 안쪽에 파이와 카메라를, 바깥에 상자를 고정 |
 | 방충망, 차양용 작은 판 | §3 참고 |
 
-*[사진 04 — images/04-all-parts.jpg: 조립 전에 펼쳐 놓은 모든 부품]*
+<img src="images/04-all-parts.jpg" alt="펼쳐 놓은 부품: USB 전원 어댑터, 케이스에 든 Pi 3와 Pi Zero 2 W, 카메라를 케이블 타이로 고정한 음식 보관 용기, 케이블 글랜드 너트, 아크릴 돔, USB 케이블과 리본 케이블" width="600">
+
+*조립 전의 모든 부품: USB 전원 어댑터와 케이블, Pi 3와 Pi Zero 2 W, 뚜껑에 카메라를 케이블 타이로 고정한 음식 보관 용기, 케이블 글랜드 너트 두 개, 아크릴 돔, 리본 케이블.*
 
 ---
 
@@ -284,6 +288,14 @@ ssh <user>@dam-kim-1.local        # 또는 ssh <user>@<pi-ip>
 sudo apt update && sudo apt full-upgrade -y
 sudo reboot
 ```
+
+나중에 설정을 바꿀 때는 파이의 설정 도구 `sudo raspi-config`를 씁니다
+(화살표 키와 Enter): Wi-Fi 국가, I2C 같은 인터페이스(§5.4), 부팅
+옵션 등.
+
+<img src="images/raspi-config.png" alt="터미널의 raspi-config 기본 메뉴: System, Display, Interface, Performance, Localisation, Advanced 옵션" width="600">
+
+*파이의 설정 도구 `raspi-config`.*
 
 ### 5.3 카메라 확인
 

@@ -110,7 +110,9 @@ every few seconds, so a small Pi is plenty.
 
 Add a small **heatsink** for the processor on either board (§3).
 
-*[Photo 01 — images/01-pi-zero-and-pi3.jpg: a Pi Zero 2 W and a Pi 3 side by side]*
+<img src="images/01-pi-zero-and-pi3.jpg" alt="A Raspberry Pi 3 in a clear case and a Pi Zero 2 W in a black heatsink case, each wired to an M12 camera" width="600">
+
+*Both boards, each wired to a camera: a Pi 3 in a clear case (bottom left) with an HQ Camera and 8 mm lens on the standard white 15-pin cable, and a Pi Zero 2 W in a heatsink case (bottom right) with the thin orange 22-pin cable running to a camera behind a dome.*
 
 ### 2b. Camera module
 
@@ -174,7 +176,9 @@ Tips:
 | Standoffs/screws, mounting bracket | to fix the Pi and camera inside and the box outside |
 | Insect mesh, a small plate for a sunshade | see §3 |
 
-*[Photo 04 — images/04-all-parts.jpg: everything laid out before assembly]*
+<img src="images/04-all-parts.jpg" alt="Parts laid out: USB power supply, Pi 3 and Pi Zero 2 W in cases, food container with the camera zip-tied inside, cable-gland nuts, acrylic dome, USB cable and ribbon cables" width="600">
+
+*Everything before assembly: the USB power supply and cable, a Pi 3 and a Pi Zero 2 W, the food container with the camera already zip-tied to the lid, two cable-gland nuts, the acrylic dome and the ribbon cables.*
 
 ---
 
@@ -294,6 +298,14 @@ ssh <user>@dam-kim-1.local        # or ssh <user>@<pi-ip>
 sudo apt update && sudo apt full-upgrade -y
 sudo reboot
 ```
+
+Later settings can be changed on the Pi with its own tool,
+`sudo raspi-config` (arrow keys and Enter): the Wi-Fi country,
+interfaces such as I2C (§5.4) and boot options.
+
+<img src="images/raspi-config.png" alt="The raspi-config main menu in a terminal: System, Display, Interface, Performance, Localisation and Advanced options" width="600">
+
+*`raspi-config`, the Pi's settings tool.*
 
 ### 5.3 Check the camera
 
