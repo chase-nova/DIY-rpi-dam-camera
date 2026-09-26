@@ -73,8 +73,8 @@
 - 카메라를 내 촬영지에 배정하고, 시작/정지하고, 영상을 관리하기.
 
 촬영지의 좌표는 공개되지 않습니다: 나와 DAM 운영자만 볼 수 있습니다.
-나중에 카메라나 촬영지를 더 늘리고 싶으면 DAM 운영자에게 한도를 올려
-달라고 요청하세요.
+나중에 카메라나 촬영지를 더 늘리고 싶으면 [contact@chase-nova.com](mailto:contact@chase-nova.com)로 연락하세요 — 몇 개가
+필요한지, 무엇을 찍을지 적어 주세요.
 
 비밀번호를 잊었다면 로그인 화면에서 **비밀번호를 잊으셨나요?**를
 누르세요 — 이메일로 코드가 오고, 그 코드로 새 비밀번호를 설정합니다.
@@ -512,7 +512,7 @@ journalctl -u dam-agent -f         # 지켜보기: "enrolled as dam-..."
   촬영지에서 숨기세요. 숨긴 날은 **Unassigned** 탭에 모이며, *Assign*으로
   다시 보이게 할 수 있습니다.
 - **카메라나 촬영지를 더 쓰려면**: 새 계정은 촬영지 1곳과 카메라 1대를
-  가질 수 있습니다. DAM 운영자에게 한도를 올려 달라고 요청하세요.
+  가질 수 있습니다. 한도를 올리려면 [contact@chase-nova.com](mailto:contact@chase-nova.com)로 연락하세요.
 
 ---
 
@@ -534,7 +534,13 @@ journalctl -u dam-agent -f         # 지켜보기: "enrolled as dam-..."
 | 가입이나 재설정 때 비밀번호가 거부됨 | 영문·숫자·기호만 쓰세요; 키보드 입력 상태(한/영)를 확인하세요 |
 | Devices 페이지에 **same hostname as …** | 내 파이 두 대의 호스트 이름이 같습니다 — 파이마다 다른 이름을 주세요 (`sudo hostnamectl set-hostname dam-kim-2` 후 재부팅) |
 
-더 많은 도움: 이 저장소에 이슈를 열어 주세요.
+더 많은 도움:
+
+- 이 가이드나 하드웨어에 관한 질문: 이 저장소에
+  [이슈](https://github.com/chase-nova/DIY-rpi-dam-camera/issues)를 열어 주세요;
+- 계정, 카메라, 그 밖의 개인적인 일: [contact@chase-nova.com](mailto:contact@chase-nova.com)로 연락하세요.
+  **토큰, 카메라 키(`credential.json`), 비밀번호는 절대 공개 이슈에 올리지
+  마세요.**
 
 ---
 
@@ -543,6 +549,9 @@ journalctl -u dam-agent -f         # 지켜보기: "enrolled as dam-..."
 - 카메라는 **풍경, 스카이라인, 공공장소의 경치**를 향하게 하세요 — 이웃의
   창문이나 마당, 사람을 향하게 하지 마세요. 사는 곳의 카메라 관련 규정을
   확인하세요.
+- DAM 카메라가 나나 내 집을 찍고 있거나, 있어서는 안 될 콘텐츠를 발견했다면
+  촬영지 이름이나 링크와 함께 [contact@chase-nova.com](mailto:contact@chase-nova.com)로 알려 주세요 — 신고는 신속히
+  처리합니다.
 - 계정과 카메라의 키(`credential.json`)는 비공개로 유지하세요.
 - 가정용 전원(AC)은 제대로 된 실외용 콘센트나 실내 콘센트에 연결하세요 —
   카메라 상자 안에 두지 마세요.

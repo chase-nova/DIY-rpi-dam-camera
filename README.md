@@ -76,8 +76,8 @@ Your new account can:
   videos.
 
 Your Location's coordinates stay private: only you and the DAM operators
-see them. If you want to run more cameras or Locations later, ask the DAM
-operator to raise your limits.
+see them. If you want to run more cameras or Locations later, write to
+[contact@chase-nova.com](mailto:contact@chase-nova.com) — say how many and what they will film.
 
 Forgot your password? On the sign-in page choose **Forgot your
 password?** — a code goes to your email, and you set a new password with
@@ -524,7 +524,7 @@ Everything below is on the camera's page in **Manage → Devices**.
   Not interesting? *Unassign* hides it from your Location; the
   **Unassigned** tab lists hidden days, and *Assign* brings one back.
 - **More cameras or Locations**: a new account holds one Location and
-  one camera. Ask the DAM operator to raise the limits.
+  one camera. Write to [contact@chase-nova.com](mailto:contact@chase-nova.com) to raise the limits.
 
 ---
 
@@ -546,7 +546,14 @@ Everything below is on the camera's page in **Manage → Devices**.
 | Password not accepted when signing up or resetting | use English letters, digits and symbols only; check the keyboard's input mode (한/영) |
 | **same hostname as …** on the Devices page | two of your Pis share a hostname — give each its own (`sudo hostnamectl set-hostname dam-kim-2`, then reboot) |
 
-More help: open an issue in this repository.
+More help:
+
+- questions about this guide or the hardware: open an
+  [issue](https://github.com/chase-nova/DIY-rpi-dam-camera/issues) in this
+  repository;
+- your account, a camera, or anything private: write to [contact@chase-nova.com](mailto:contact@chase-nova.com).
+  **Never post a token, a camera key (`credential.json`) or your password
+  in a public issue.**
 
 ---
 
@@ -555,6 +562,9 @@ More help: open an issue in this repository.
 - Point your camera at **landscapes, skylines and public scenery** — not
   into neighbours' windows, gardens or at people. Check the rules for
   cameras where you live.
+- A DAM camera filming you or your home, or content that should not be
+  there? Write to [contact@chase-nova.com](mailto:contact@chase-nova.com) with the Location's name or link — reports are
+  handled promptly.
 - Keep your account and the camera's key (`credential.json`) private.
 - Mains power belongs to a proper outdoor-rated socket or an indoor
   outlet — not inside the camera box.
