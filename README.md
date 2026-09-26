@@ -469,7 +469,9 @@ Optional, on the same page:
 3. **Seal**: silica-gel pack in, lid closed, cable gland tightened,
    silicone on the window edge.
 
-*[Photo 12 — images/12-focus-view.png: the live view used for focusing]*
+<img src="images/12-focus-view.jpg" alt="The camera's live view page: a title line with the Location name, time and frame number above the camera image, where a distant skyline is sharp" width="600">
+
+*The live view at `http://<pi-ip>:8080/`: the title line shows the Location, the time and a frame counter; turn the lens until distant details like this skyline are sharpest. (Nearby buildings are blurred here for privacy.)*
 
 <img src="images/mounted-outdoors.jpg" alt="Two fully packaged cameras: sealed boxes with their windows, mounted on an outdoor railing" width="600">
 
@@ -515,11 +517,12 @@ Everything below is on the camera's page in **Manage → Devices**.
 - **Lost or stolen camera**: *Disable (kill-switch)* under **Device
   token** stops all its uploads at once. Only a DAM operator can enable
   it again — write to contact@chase-nova.com.
-- **Your videos**: open your Location in **Manage → Locations**. Daily
-  videos are added there by DAM (for now in batches, so a new day can
-  take a day or two to appear). Each video starts **private**; click
-  its *private* / *public* badge to show it on the public site or hide
-  it again.
+- **Your videos**: open your Location in **Manage → Locations**. Each
+  day's video appears there by itself, within about 30 minutes of the
+  day ending. Every video starts **private**; click its *private* /
+  *public* badge to show it on the public site or hide it again.
+  Not interesting? *Unassign* hides it from your Location; the
+  **Unassigned** tab lists hidden days, and *Assign* brings one back.
 - **More cameras or Locations**: a new account holds one Location and
   one camera. Ask the DAM operator to raise the limits.
 
