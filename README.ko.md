@@ -402,7 +402,9 @@ MAX_EXPOSURE_MS=5000
 - **한 번만** 보여 줍니다 — 지금 복사하세요,
 - **한 번만** 쓸 수 있고, **48시간 뒤 만료**됩니다.
 
-*[사진 10 — images/10-register-dialog.png: 토큰 대화 상자]*
+<img src="images/10-register-dialog.png" alt="Register device 대화 상자: 한 번만 보이는 ENROLLMENT_TOKEN 줄, 기기 ID, 48시간 만료, 파이에 넣는 방법, Copy와 Done 버튼" width="600">
+
+***Register device**를 누른 직후의 토큰 대화 상자 (여기서는 토큰과 기기 ID를 가렸습니다 — 실제 값은 비공개로 지키세요). **Copy**를 누르면 `ENROLLMENT_TOKEN=…` 줄 전체가 클립보드에 복사되어 §7.3에 쓸 수 있습니다.*
 
 ### 7.3 카메라에 토큰 넣기
 

@@ -411,7 +411,9 @@ In **Manage → Devices → Register device**, give it a label (e.g.
 - it is shown **only once** — copy it now,
 - it works **once**, and **expires after 48 hours**.
 
-*[Photo 10 — images/10-register-dialog.png: the token dialog]*
+<img src="images/10-register-dialog.png" alt="The Register device dialog showing the one-time ENROLLMENT_TOKEN line, the device ID, its 48-hour expiry and how to give it to the Pi, with Copy and Done buttons" width="600">
+
+*The token dialog right after **Register device** (token and device ID blanked out here — yours are real, keep them private). **Copy** puts the whole `ENROLLMENT_TOKEN=…` line on your clipboard for §7.3.*
 
 ### 7.3 Give the token to the camera
 
