@@ -230,7 +230,6 @@ protect itself.
 <img src="images/gluing-dome-to-lid.jpg" alt="Glue gun, container lid with the dome and the camera" width="600">
 
 *Glue the dome onto the lid all the way round with a hot-glue gun, then finish the seam with outdoor silicone.*
-*[Photo 06 — images/06-sunshade.jpg: the second roof with its air gap]*
 
 ---
 
@@ -252,7 +251,6 @@ the camera works (§8).
    ties through small holes around the camera board work well.
 5. **Fix the Pi** on standoffs, upright if possible.
 
-*[Photo 07 — images/07-cable-connected.jpg: ribbon cable in the Pi and camera connectors]*
 <img src="images/camera-fixed-to-lid.jpg" alt="HQ camera with lens fixed to the lid with zip ties, ribbon cable passing the edge" width="600">
 
 *The camera fixed to the inside of the lid with zip ties, lens centred under the window; the ribbon cable runs along the lid to the box.*
@@ -285,8 +283,6 @@ the camera works (§8).
    - **SSH enabled** — preferably with your public key,
    - your time zone.
 4. Write the card.
-
-*[Photo 09 — images/09-imager-settings.png: the Imager settings screen]*
 
 ### 5.2 First boot
 
@@ -455,7 +451,9 @@ Optional, on the same page:
 - **Boosted dawn / Boosted dusk** — four times more photos around sunrise
   and sunset (the video gets a little longer).
 
-*[Photo 11 — images/11-device-page.png: device page with the first frame]*
+<img src="images/11-device-page.png" alt="The device page: the latest frame with its file path and live-view link on the left, the camera's reported status (Pi model, camera, interval, temperature, power, upload counters) on the right" width="600">
+
+*The top of a camera's page: the **latest frame** (blurred here) with the live-view link used in §8, and what the camera last reported. This example camera is in trouble — 95.7 °C (paused) and under-voltage — exactly what the heat and power advice in §3 and §11 prevents.*
 
 ---
 
@@ -472,7 +470,10 @@ Optional, on the same page:
    silicone on the window edge.
 
 *[Photo 12 — images/12-focus-view.png: the live view used for focusing]*
-*[Photo 13 — images/13-sealed-unit.jpg: the fully packaged camera]*
+
+<img src="images/mounted-outdoors.jpg" alt="Two fully packaged cameras: sealed boxes with their windows, mounted on an outdoor railing" width="600">
+
+*Fully packaged: each camera sealed in its box behind the window, ready to mount (§9).*
 
 ---
 
