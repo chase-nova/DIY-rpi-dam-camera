@@ -487,10 +487,6 @@ Optional, on the same page:
 - Check the Wi-Fi signal at the final spot before fixing everything.
 - Next day, watch your first video on your Location's page.
 
-<img src="images/mounted-outdoors.jpg" alt="Two packaged cameras mounted on an outdoor railing, wrapped in clear plastic against rain" width="600">
-
-*Two packaged cameras mounted on a railing. Here a clear plastic cover keeps rain off the seams — a sunshade (§3) belongs over it on sunny spots.*
-
 <img src="images/15-first-video.jpg" alt="A frame of a daily time-lapse video: a wide view across a river to a city skyline under evening clouds, with the video player's controls" width="600">
 
 *A frame from a camera's daily video on its Location page — a one-minute day, here at 0:16 of 1:05 (boosted dawn and dusk make it a little longer).*
